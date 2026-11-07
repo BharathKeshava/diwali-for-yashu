@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>To My Favourite Person ❤️ · A Diwali Surprise</title>
+  <meta name="description" content="This Diwali, something a little more special than just a wish — a little world built with love, only for you." />
+  <meta name="theme-color" content="#120810" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- WhatsApp / social link preview — after deploying, replace the og:image
+       href with its full https://….github.io/… URL for the preview card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="To My Favourite Person ❤️" />
+  <meta property="og:description" content="This Diwali, I made something special for you… open it slowly." />
+  <meta property="og:image" content="assets/images/our-photo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="welcome" data-ambient="stars sparks petals bokeh">
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page-enter-veil" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to the story</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="page">
+    <section class="hero wrap" aria-labelledby="welcome-title">
+      <div class="hero__diyas" aria-hidden="true">
+        <span class="diya diya--lit"><svg viewBox="0 0 100 100" role="presentation"><defs><radialGradient id="haloG" cx="50%" cy="42%" r="50%"><stop offset="0" stop-color="#ffd98e" stop-opacity=".85"/><stop offset=".6" stop-color="#e9b85c" stop-opacity=".3"/><stop offset="1" stop-color="#e9b85c" stop-opacity="0"/></radialGradient><linearGradient id="flameG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3d6"/><stop offset=".45" stop-color="#ffc668"/><stop offset="1" stop-color="#e2823c"/></linearGradient><linearGradient id="bowlG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a0522d"/><stop offset="1" stop-color="#4a1f12"/></linearGradient></defs><circle class="halo" cx="50" cy="42" r="30" fill="url(#haloG)"/><g class="flame"><path class="flame-core" d="M50 16c6.5 9 11 14.5 11 21a11 11 0 0 1-22 0c0-6.5 4.5-12 11-21Z" fill="url(#flameG)"/><path d="M50 30c3 4.4 5 7.2 5 10.4a5 5 0 1 1-10 0c0-3.2 2-6 5-10.4Z" fill="#fff8ea"/></g><path class="bowl" d="M12 66h76c0 12-17 20-38 20S12 78 12 66Z" fill="url(#bowlG)"/><path d="M12 66h76" stroke="#ffd98e" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+        <span class="diya diya--lit"><svg viewBox="0 0 100 100" role="presentation"><circle class="halo" cx="50" cy="42" r="30" fill="url(#haloG)"/><g class="flame"><path class="flame-core" d="M50 16c6.5 9 11 14.5 11 21a11 11 0 0 1-22 0c0-6.5 4.5-12 11-21Z" fill="url(#flameG)"/><path d="M50 30c3 4.4 5 7.2 5 10.4a5 5 0 1 1-10 0c0-3.2 2-6 5-10.4Z" fill="#fff8ea"/></g><path class="bowl" d="M12 66h76c0 12-17 20-38 20S12 78 12 66Z" fill="url(#bowlG)"/><path d="M12 66h76" stroke="#ffd98e" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+        <span class="diya diya--lit"><svg viewBox="0 0 100 100" role="presentation"><circle class="halo" cx="50" cy="42" r="30" fill="url(#haloG)"/><g class="flame"><path class="flame-core" d="M50 16c6.5 9 11 14.5 11 21a11 11 0 0 1-22 0c0-6.5 4.5-12 11-21Z" fill="url(#flameG)"/><path d="M50 30c3 4.4 5 7.2 5 10.4a5 5 0 1 1-10 0c0-3.2 2-6 5-10.4Z" fill="#fff8ea"/></g><path class="bowl" d="M12 66h76c0 12-17 20-38 20S12 78 12 66Z" fill="url(#bowlG)"/><path d="M12 66h76" stroke="#ffd98e" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+      </div>
+
+      <h1 id="welcome-title" class="hero__title gold-text" data-text="welcome.title">To My Favourite Person ❤️</h1>
+      <p class="hero__sub" data-text="welcome.subtitle">This Diwali, I wanted to give you something a little more special than just a wish...</p>
+
+      <button type="button" id="surprise-btn" class="btn" data-text="welcome.button" aria-expanded="false" aria-controls="surprise-overlay">
+        Open Your Surprise ✨
+      </button>
+    </section>
+
+    <!-- the surprise reveal -->
+    <div id="surprise-overlay" class="surprise-overlay" role="dialog" aria-modal="true" aria-label="A message from your favourite person" hidden>
+      <div class="surprise-card">
+        <span class="script" data-text="welcome.revealTitle">Happy Diwali, Yashu ✨</span>
+        <p data-text="welcome.revealMessage">A little surprise, made with lots of thought and a little piece of my heart, just for you. As you turn each page, I hope you find a smile, a little happiness and a glimpse of how special you are becoming in my life. So, take your time, my soon-to-be wife. This little world is made just for you. ❤️</p>
+        <a class="btn" href="story.html" data-goto="story.html" data-text="welcome.revealButton">Walk Into Our Story ✨</a>
+      </div>
+    </div>
+
+    <div id="story-nav" class="story-nav wrap"></div>
+  </main>
+
+  <footer class="site-footer">
+    <span class="script" data-text="footer.line">Made with all my heart, for my favourite person</span>
+    <p class="site-footer__line"><span data-text="footer.signature">— Bharath</span> · <span data-year>2026</span></p>
+  </footer>
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Chapters"></nav>
+
+  <button type="button" id="music-toggle" class="music-btn" aria-pressed="false">
+    <svg class="icon-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+      <path d="m3.5 3.5 17 17" />
+    </svg>
+    <svg class="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+    </svg>
+  </button>
+
+  <script src="js/content.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

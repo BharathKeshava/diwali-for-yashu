@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Our Anime Love Story 🌸 · A Diwali Surprise</title>
+  <meta name="description" content="If I could choose my favourite place in the entire world, it would always be right beside you." />
+  <meta name="theme-color" content="#120810" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="anime" data-ambient="blossoms stars sparks">
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page-enter-veil" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to the story</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="page">
+    <section class="wrap center section" aria-labelledby="anime-title">
+      <div class="eyebrow-flourish" data-reveal>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.5c1.2 2.8 3.2 4.4 6.3 4.7-.7 3.2-2.6 5.3-6.3 6.3-3.7-1-5.6-3.1-6.3-6.3 3.1-.3 5.1-1.9 6.3-4.7Z"/><path d="M12 14.5v2"/><path d="M8 18c1.1.9 2.5 1.4 4 1.4S14.9 18.9 16 18"/></svg>
+      </div>
+      <h2 id="anime-title" class="gold-text" data-text="anime.title" data-reveal>Our Anime Love Story 🌸</h2>
+      <p class="lede" data-text="anime.intro" data-reveal style="--reveal-delay:.15s">In every story, two people find their way to each other. I'm glad our story is beginning, and I can't wait to see where it takes us. ❤️</p>
+
+      <div class="anime-stage" data-reveal style="--reveal-delay:.25s">
+        <div id="anime-holder" class="anime-holder"></div>
+      </div>
+
+      <p class="anime-caption" data-text="anime.caption" data-reveal>
+        If I could choose someone to share all the little moments of life with, I would be happy to discover that journey with you.
+      </p>
+      <p class="anime-message" data-text="anime.message" data-reveal style="--reveal-delay:.15s">
+        You are becoming a beautiful part of my future, and I look forward to making our story one worth remembering. ❤️
+      </p>
+    </section>
+
+    <div id="story-nav" class="story-nav wrap"></div>
+  </main>
+
+  <footer class="site-footer">
+    <span class="script" data-text="footer.line">Made with all my heart, for my favourite person</span>
+    <p class="site-footer__line"><span data-text="footer.signature">— Bharath</span> · <span data-year>2026</span></p>
+  </footer>
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Chapters"></nav>
+
+  <button type="button" id="music-toggle" class="music-btn" aria-pressed="false">
+    <svg class="icon-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+      <path d="m3.5 3.5 17 17" />
+    </svg>
+    <svg class="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+    </svg>
+  </button>
+
+  <script src="js/content.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

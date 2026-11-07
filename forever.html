@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Our Forever ❤️ · A Diwali Surprise</title>
+  <meta name="description" content="Today, tomorrow and every Diwali ahead — I choose you." />
+  <meta name="theme-color" content="#120810" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="forever" data-ambient="stars petals sparks hearts">
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page-enter-veil" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to the story</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="page">
+    <section class="forever-hero wrap center section" aria-labelledby="forever-title">
+      <div class="moon" aria-hidden="true"></div>
+
+      <div class="forever-heart" aria-hidden="true" data-reveal>
+        <svg viewBox="0 0 100 100" role="presentation">
+          <defs>
+            <radialGradient id="heartG" cx="40%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#f29bb4" />
+              <stop offset=".55" stop-color="#e26a8d" />
+              <stop offset="1" stop-color="#b3314e" />
+            </radialGradient>
+          </defs>
+          <path d="M50 88C24 68 8 52 8 34 8 20 19 10 32 10c8 0 14.5 4 18 10.5C53.5 14 60 10 68 10c13 0 24 10 24 24 0 18-16 34-42 54Z" fill="url(#heartG)"/>
+          <path d="M30 22c-6 2-10 8-10 14" stroke="#ffd7df" stroke-width="3" stroke-linecap="round" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+
+      <h2 id="forever-title" class="gold-text" data-text="forever.title" data-reveal>One More Thing...</h2>
+
+      <div class="forever-message">
+        <p data-text="forever.message.0" data-reveal>Life will bring us different seasons, new experiences and unexpected adventures.</p>
+        <p data-text="forever.message.1" data-reveal style="--reveal-delay:.12s">There will be beautiful days, challenging days and countless little moments in between.</p>
+        <p data-text="forever.message.2" data-reveal style="--reveal-delay:.24s">What I look forward to most is having someone to share all those moments with, someone with whom we can grow, dream and build a beautiful life.</p>
+        <p data-text="forever.message.3" data-reveal style="--reveal-delay:.36s">Today, tomorrow and in all the Deepavalis ahead...</p>
+        <p data-text="forever.message.4" data-reveal style="--reveal-delay:.48s">I look forward to choosing you, understanding you and building our forever together. ❤️</p>
+      </div>
+
+      <figure class="forever-photo" data-reveal style="--reveal-delay:.2s">
+        <div class="photo-slot" data-photo="us" data-photo-alt="The two of us, together and forever">
+          <div class="photo-fallback" aria-hidden="true">
+            <span class="photo-fallback-initial"></span>
+            <span class="photo-fallback-label"></span>
+          </div>
+          <img alt="" />
+        </div>
+      </figure>
+
+      <button type="button" id="final-surprise-btn" class="btn btn--heart" data-text="forever.finalButton" data-reveal aria-expanded="false" aria-controls="finale-overlay">
+        One Last Surprise ❤️
+      </button>
+    </section>
+
+    <div id="story-nav" class="story-nav wrap"></div>
+  </main>
+
+  <!-- the last surprise -->
+  <div id="finale-overlay" class="finale-overlay" role="dialog" aria-modal="true" aria-label="Our forever" hidden>
+    <div class="hearts-layer" aria-hidden="true"></div>
+    <div class="finale-card">
+      <h2 class="finale-title gold-text" data-text="forever.finalTitle" tabindex="-1">Happy Diwali, My Love</h2>
+      <p class="finale-sub" data-text="forever.finalMessage.0">Here's to our new beginning, our shared dreams, countless celebrations and a beautiful lifetime together.</p>
+      <p class="finale-sub" data-text="forever.finalMessage.1">Our story is just beginning. ❤️</p>
+      <div class="finale-actions">
+        <button type="button" class="btn btn--ghost" data-replay data-text="forever.replayButton">Live it again ✨</button>
+        <a class="btn btn--ghost" href="index.html">From the beginning</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="script" data-text="footer.line">Made with all my heart, for my favourite person</span>
+    <p class="site-footer__line"><span data-text="footer.signature">— Bharath</span> · <span data-year>2026</span></p>
+  </footer>
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Chapters"></nav>
+
+  <button type="button" id="music-toggle" class="music-btn" aria-pressed="false">
+    <svg class="icon-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+      <path d="m3.5 3.5 17 17" />
+    </svg>
+    <svg class="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18.5V6l9-2v11.5" />
+      <circle cx="6.5" cy="18.5" r="2.5" />
+      <circle cx="15.5" cy="15.5" r="2.5" />
+    </svg>
+  </button>
+
+  <script src="js/content.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

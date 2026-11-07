@@ -1,0 +1,176 @@
+/* ==========================================================================
+   RESPONSIVE — mobile-first base lives in style.css; this file widens.
+   Key thresholds: 360px (small phones) · 640px (large phones/landscape)
+   · 900px (tablets — desktop chrome takes over) · 1200px (desktops)
+   ========================================================================== */
+
+/* ---------- very small phones ---------- */
+@media (max-width: 360px) {
+  :root {
+    --bottom-nav-h: 58px;
+  }
+  .bn-label {
+    font-size: 0.54rem;
+  }
+  .story-nav__inner {
+    flex-direction: column;
+  }
+  .story-nav__next {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .music-btn {
+    width: 42px;
+    height: 42px;
+    right: 0.8rem;
+  }
+}
+
+/* ---------- large phones / small tablets ---------- */
+@media (min-width: 640px) {
+  .page {
+    padding-inline: 1.6rem;
+  }
+  .envelope {
+    width: 24rem;
+  }
+  .timeline {
+    padding-left: 3rem;
+  }
+  .tl-node {
+    left: calc(-3rem + 3px);
+  }
+  .story-nav__inner {
+    gap: 1.4rem;
+  }
+  .story-nav__link {
+    padding: 1.15rem 1.4rem;
+  }
+  .music-btn {
+    right: 1.4rem;
+  }
+}
+
+/* ---------- tablets and up: desktop chrome replaces the bottom bar ---------- */
+@media (min-width: 900px) {
+  :root {
+    --bottom-nav-h: 0px;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .site-footer {
+    padding-bottom: 3.2rem;
+  }
+  .music-btn {
+    bottom: 1.3rem;
+    right: 1.5rem;
+  }
+  .page {
+    padding-top: 7.2rem;
+    padding-bottom: 3rem;
+  }
+
+  /* hero breathes bigger */
+  .hero__title {
+    margin-bottom: 0.3em;
+  }
+  .hero__diyas {
+    gap: 3.6rem;
+  }
+
+  /* timeline: a balanced two-sided thread */
+  .timeline {
+    padding-left: 0;
+    max-width: 54rem;
+    margin-inline: auto;
+  }
+  .timeline::before,
+  .timeline-thread {
+    left: 50%;
+    margin-left: -1px;
+  }
+  .tl-item {
+    width: calc(50% - 2.6rem);
+  }
+  .tl-item:nth-child(odd) {
+    margin-right: auto;
+    text-align: right;
+  }
+  .tl-item:nth-child(odd) .tl-node {
+    right: -3.05rem;
+    left: auto;
+    top: 1rem;
+  }
+  .tl-item:nth-child(even) {
+    margin-left: auto;
+  }
+  .tl-item:nth-child(even) .tl-node {
+    left: -3.05rem;
+    top: 1rem;
+  }
+  .tl-item:nth-child(odd) .tl-card .photo-slot,
+  .tl-item:nth-child(odd) .tl-body {
+    text-align: right;
+  }
+  .tl-item:nth-child(odd) .tl-body h3,
+  .tl-item:nth-child(odd) .tl-index {
+    text-align: right;
+  }
+  .tl-index {
+    margin-bottom: 0.45rem;
+  }
+
+  /* anime stage gets the cinematic treatment */
+  .anime-frame {
+    max-width: 34rem;
+    padding: 14px;
+    border-radius: 26px;
+  }
+  .anime-caption {
+    max-width: 34rem;
+  }
+
+  /* letter on a wider sheet */
+  .letter-paper {
+    max-width: 38rem;
+  }
+
+  /* story-nav wider */
+  .story-nav {
+    max-width: var(--wrap-wide);
+  }
+}
+
+/* ---------- desktops ---------- */
+@media (min-width: 1200px) {
+  .page {
+    padding-top: 7.8rem;
+  }
+  .anime-frame {
+    max-width: 36rem;
+  }
+  .finale-title {
+    font-size: 3.4rem;
+  }
+}
+
+/* ---------- print: keep the memory, drop the chrome ---------- */
+@media print {
+  .bottom-nav,
+  .site-header,
+  .music-btn,
+  .ambient,
+  .fx-rain,
+  .fx-spark {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #222;
+  }
+}
